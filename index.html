@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produt Preview Design</title>
+    <style>
+        .main-image{
+            width: 370px;
+            height: 370px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px black;
+            display: block;
+            margin: 20px auto;
+        }
+        .img-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        .product-img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 7px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./imgs/main_img.jpg" id="main-img" class="main-image"/>
+    <div class="img-container">
+        <img src="./imgs/main_img.jpg" class="product-img" onclick="changeImg(1)" />
+        <img src="./imgs/img1.jpg" class="product-img" onclick="changeImg(2)" />
+        <img src="./imgs/img2.jpg" class="product-img" onclick="changeImg(3)" />
+        <img src="./imgs/img3.jpg" class="product-img" onclick="changeImg(4)" />
+        <img src="./imgs/img4.jpg" class="product-img" onclick="changeImg(5)" />
+        <img src="./imgs/img5.jpg" class="product-img" onclick="changeImg(6)" />
+    </div>
+
+    
+    
+</body>
+</html>
