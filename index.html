@@ -43,7 +43,36 @@
         <img src="./imgs/img5.jpg" class="product-img" onclick="changeImg(6)" />
     </div>
 
+    <script>
+        function changeImg(num) {
+            const mainImg = document.getElementById('main-img');
     
+            if(num==1)
+            {
+                mainImg.src = "./imgs/main_img.jpg";
+            }
+            else if (num==2)
+            {
+                mainImg.src="./imgs/img1.jpg";
+            }
+            else if (num==3)
+            {
+                mainImg.src="./imgs/img2.jpg";
+            }
+            else if (num==4)
+            {
+                mainImg.src="./imgs/img3.jpg";
+            }
+            else if (num==5)
+            {
+                mainImg.src="./imgs/img4.jpg";
+            }
+            else if (num==6)
+            {
+                mainImg.src="./imgs/img5.jpg";
+            }
+        }
+    </script>
     
 </body>
 </html>
